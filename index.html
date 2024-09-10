@@ -1,6 +1,45 @@
 <DOCTYPE html!>
+  <html>
   <head>INDMC!-MCBE</head>
-</DOCTYPE>head>
+</head>
 <style></style>
 <body><div style="background-color: yellow;"><p>Bedrock Server</p><br>
-<div style="background-color:Orange;"><p>Indmc.aternos.me<br>Port:17843</p></div></div></body>
+<div style="background-color:Orange;">
+<input type="text" value="Indmc.aternos.me" id="myInput">
+<button onclick="myFunction()">Copy IP</button>
+
+<script>
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+<input type="text" value="Port:17843" id="myInput">
+<button onclick="myFunction()">Copy text</button>
+
+<script>
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+</script></div></div></body></html>
